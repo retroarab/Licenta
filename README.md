@@ -3,7 +3,7 @@
 ## Author: El Kharoubi Iosif
 #### [**GitHub repository link**](https://github.com/retroarab/Licenta)
 
-### **⚠️ IMPORTANT DISCLAIMER**
+### ** IMPORTANT DISCLAIMER**
 This toolkit is a **Proof of Concept (PoC)** designed exclusively for educational purposes and authorized penetration testing. It has been specifically tested and optimized for **Android 9 systems**, particularly targeting PX5-based automotive head units.
 
 **Target Device Information:**
@@ -128,15 +128,6 @@ All attack sessions generate comprehensive logs stored in:
 - **Audio Captures:** `bt_captures/session_*/SCO_Audio/`
 - **Packet Data:** `bt_captures/session_*/[service_name]/`
 
-### **Legal Notice and Ethical Use**
-
- **LEGAL DISCLAIMER:** This toolkit is intended solely for:
-- Authorized penetration testing
-- Security research in controlled environments
-- Educational purposes in cybersecurity courses
-- Assessment of your own devices
-
-**DO NOT USE** this toolkit on devices you do not own or without explicit written permission. Unauthorized access to Bluetooth devices may violate local, national, and international laws.
 
 ### **Troubleshooting**
 
