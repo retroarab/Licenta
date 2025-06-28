@@ -130,7 +130,7 @@ All attack sessions generate comprehensive logs stored in:
 
 ### **Legal Notice and Ethical Use**
 
-⚖️ **LEGAL DISCLAIMER:** This toolkit is intended solely for:
+ **LEGAL DISCLAIMER:** This toolkit is intended solely for:
 - Authorized penetration testing
 - Security research in controlled environments
 - Educational purposes in cybersecurity courses
