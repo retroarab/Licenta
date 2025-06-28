@@ -166,43 +166,8 @@ sudo systemctl restart bluetooth
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 ```
 
-### **Contributing**
-
-Contributions are welcome! Please ensure all submissions:
-- Follow ethical hacking guidelines
-- Include proper documentation
-- Are tested in controlled environments
-- Respect responsible disclosure practices
-
-### **Academic License & Technical Architecture**
-
-**For Educational Assessment Only:** This project is submitted as part of academic coursework and is intended for professor evaluation and educational purposes only. The following technical details are provided for academic assessment:
-
-#### **Multi-HCI Interface Architecture**
-- **Primary Interface (hci0):** Phone-facing adapter for accepting incoming connections
-- **Secondary Interface (hci1):** Car-facing adapter for establishing outbound connections
-- **Dual-Adapter Requirement:** The MitM functionality requires two separate HCI interfaces to create isolated communication channels
-
-#### **Technical Implementation Details**
-- **D-Bus Integration:** Uses BlueZ D-Bus API for device management and pairing
-- **RFCOMM Protocol:** Implements RFCOMM socket programming for data interception
-- **SCO Audio Capture:** Real-time audio stream interception for HFP profiles
-- **Service Discovery Protocol (SDP):** Automated enumeration of available Bluetooth services
-- **PIN Brute-forcing:** Iterative authentication bypass with intelligent retry mechanisms
-
-#### **Limitations & Scope**
-- Tested specifically on Android 9 PX5 automotive systems
-- Requires physical proximity to target devices
-- CSR chipset compatibility verified
-- Educational proof-of-concept implementation
 
 
-### **Research Citations**
 
-If you reference this toolkit in academic research, please cite:
-```
-El Kharoubi, I. (2024). Bluetooth Attack Toolkit: Advanced Penetration Testing Suite for Automotive Systems. GitHub Repository. https://github.com/retroarab/Licenta
-```
 
----
 
