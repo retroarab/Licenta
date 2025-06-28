@@ -166,21 +166,3 @@ sudo systemctl restart bluetooth
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 ```
 
-### **Contributing**
-
-Contributions are welcome! Please ensure all submissions:
-- Follow ethical hacking guidelines
-- Include proper documentation
-- Are tested in controlled environments
-- Respect responsible disclosure practices
-
-### **Research Citations**
-
-If you use this toolkit in academic research, please cite:
-```
-[El Kharoubi Iosif]. (2025). BLUETOOTH SECURITY VULNERABILITIES IN IN-VEHICLE INFOTAINMENT SYSTEMS GitHub Repository.
-```
-
----
-
-**Remember:** With great power comes great responsibility. Use this toolkit ethically and legally. 
