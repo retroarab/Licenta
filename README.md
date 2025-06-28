@@ -1,9 +1,9 @@
 # Bluetooth Attack Toolkit - BLUETOOTH PENETRATION TESTING SUITE
 
-## Author: [El Kharoubi Iosif]
+## Author: El Kharoubi Iosif
 #### [**GitHub repository link**](https://github.com/retroarab/Licenta)
 
-### ** IMPORTANT DISCLAIMER**
+### **⚠️ IMPORTANT DISCLAIMER**
 This toolkit is a **Proof of Concept (PoC)** designed exclusively for educational purposes and authorized penetration testing. It has been specifically tested and optimized for **Android 9 systems**, particularly targeting PX5-based automotive head units.
 
 **Target Device Information:**
@@ -58,7 +58,7 @@ You should see at least `hci0`. For MitM attacks, two adapters (`hci0` and `hci1
 6. Set up proper permissions:
 ```bash
 sudo usermod -a -G dialout $USER
-sudo chmod +x bluetooth_attack_suite.py
+sudo chmod +x better.py
 ```
 
 7. Configure Bluetooth services:
@@ -115,7 +115,7 @@ python3 better.py braktooth_run
 
 - **Operating System:** Linux (Ubuntu 18.04+ recommended)
 - **Python Version:** 3.6 or higher
-- **Bluetooth Hardware:** 1x Extra USB Bluetooth adapters with CSR chipset recommended ( tested )
+- **Bluetooth Hardware:** 1x Extra USB Bluetooth adapters with CSR chipset recommended (tested)
 - **Privileges:** Root access required for low-level Bluetooth operations
 - **Memory:** Minimum 2GB RAM
 - **Storage:** 1GB free space for logs and captures
@@ -130,7 +130,7 @@ All attack sessions generate comprehensive logs stored in:
 
 ### **Legal Notice and Ethical Use**
 
- **LEGAL DISCLAIMER:** This toolkit is intended solely for:
+⚖️ **LEGAL DISCLAIMER:** This toolkit is intended solely for:
 - Authorized penetration testing
 - Security research in controlled environments
 - Educational purposes in cybersecurity courses
@@ -165,4 +165,44 @@ pip3 install --upgrade pybluez
 sudo systemctl restart bluetooth
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 ```
+
+### **Contributing**
+
+Contributions are welcome! Please ensure all submissions:
+- Follow ethical hacking guidelines
+- Include proper documentation
+- Are tested in controlled environments
+- Respect responsible disclosure practices
+
+### **Academic License & Technical Architecture**
+
+**For Educational Assessment Only:** This project is submitted as part of academic coursework and is intended for professor evaluation and educational purposes only. The following technical details are provided for academic assessment:
+
+#### **Multi-HCI Interface Architecture**
+- **Primary Interface (hci0):** Phone-facing adapter for accepting incoming connections
+- **Secondary Interface (hci1):** Car-facing adapter for establishing outbound connections
+- **Dual-Adapter Requirement:** The MitM functionality requires two separate HCI interfaces to create isolated communication channels
+
+#### **Technical Implementation Details**
+- **D-Bus Integration:** Uses BlueZ D-Bus API for device management and pairing
+- **RFCOMM Protocol:** Implements RFCOMM socket programming for data interception
+- **SCO Audio Capture:** Real-time audio stream interception for HFP profiles
+- **Service Discovery Protocol (SDP):** Automated enumeration of available Bluetooth services
+- **PIN Brute-forcing:** Iterative authentication bypass with intelligent retry mechanisms
+
+#### **Limitations & Scope**
+- Tested specifically on Android 9 PX5 automotive systems
+- Requires physical proximity to target devices
+- CSR chipset compatibility verified
+- Educational proof-of-concept implementation
+
+
+### **Research Citations**
+
+If you reference this toolkit in academic research, please cite:
+```
+El Kharoubi, I. (2024). Bluetooth Attack Toolkit: Advanced Penetration Testing Suite for Automotive Systems. GitHub Repository. https://github.com/retroarab/Licenta
+```
+
+---
 
