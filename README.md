@@ -1,9 +1,9 @@
-# Bluetooth Attack Toolkit - ADVANCED BLUETOOTH PENETRATION TESTING SUITE
+# Bluetooth Attack Toolkit - BLUETOOTH PENETRATION TESTING SUITE
 
 ## Author: [El Kharoubi Iosif]
 #### [**GitHub repository link**](https://github.com/retroarab/Licenta)
 
-### **⚠️ IMPORTANT DISCLAIMER**
+### ** IMPORTANT DISCLAIMER**
 This toolkit is a **Proof of Concept (PoC)** designed exclusively for educational purposes and authorized penetration testing. It has been specifically tested and optimized for **Android 9 systems**, particularly targeting PX5-based automotive head units.
 
 **Target Device Information:**
@@ -95,12 +95,12 @@ python3 better.py braktooth_run
 
 ### **Features and Capabilities**
 
-- **🔓 PIN Cracking:** Advanced Bluetooth PIN brute-forcing with intelligent retry mechanisms
-- **🕵️ Man-in-the-Middle:** Real-time interception of HFP, SPP, HSP, and other Bluetooth protocols
-- **🎧 Audio Interception:** SCO audio capture for hands-free profile communications
-- **📱 Multi-Adapter Support:** Simultaneous use of multiple Bluetooth adapters
-- **📊 Traffic Analysis:** Comprehensive logging and packet capture functionality
-- **🔧 Service Discovery:** Automated Bluetooth service enumeration and profiling
+- **PIN Cracking:** Advanced Bluetooth PIN brute-forcing with intelligent retry mechanisms
+- **Man-in-the-Middle:** Real-time interception of HFP, SPP, HSP, and other Bluetooth protocols
+- **Audio Interception:** SCO audio capture for hands-free profile communications
+- **Multi-Adapter Support:** Simultaneous use of multiple Bluetooth adapters
+- **Traffic Analysis:** Comprehensive logging and packet capture functionality
+- **Service Discovery:** Automated Bluetooth service enumeration and profiling
 
 ### **Supported Bluetooth Profiles**
 
@@ -115,7 +115,7 @@ python3 better.py braktooth_run
 
 - **Operating System:** Linux (Ubuntu 18.04+ recommended)
 - **Python Version:** 3.6 or higher
-- **Bluetooth Hardware:** USB Bluetooth adapters with CSR chipset recommended
+- **Bluetooth Hardware:** 1x Extra USB Bluetooth adapters with CSR chipset recommended ( tested )
 - **Privileges:** Root access required for low-level Bluetooth operations
 - **Memory:** Minimum 2GB RAM
 - **Storage:** 1GB free space for logs and captures
@@ -130,7 +130,7 @@ All attack sessions generate comprehensive logs stored in:
 
 ### **Legal Notice and Ethical Use**
 
-⚖️ **LEGAL DISCLAIMER:** This toolkit is intended solely for:
+ **LEGAL DISCLAIMER:** This toolkit is intended solely for:
 - Authorized penetration testing
 - Security research in controlled environments
 - Educational purposes in cybersecurity courses
@@ -183,4 +183,4 @@ If you use this toolkit in academic research, please cite:
 
 ---
 
-**Remember:** With great power comes great responsibility. Use this toolkit ethically and legally. 🛡️
+**Remember:** With great power comes great responsibility. Use this toolkit ethically and legally. 
